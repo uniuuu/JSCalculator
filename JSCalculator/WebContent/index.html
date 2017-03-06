@@ -5,11 +5,69 @@
 <meta http-equiv="content-type"
 	content="text/html; charset=windows-1250">
 <link type="css/layout.css" rel="stylesheet" />
+
 <script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
+<style>
+div#one{
+margin:auto;
+width:270px;
+text-align:center;
+margin-top:40px;
+}
+#table{
+text-align:center;
+}
+</style>
+
+
 <title>Calculator</title>
 </head>
 <body>
+
+	<div id="one">
+		<table id="table" class="table table-bordered table-hover">
+			<tr>
+				<td colspan="5"><input type="text" class="form-control" id="inputResult" />
+				</td>
+			</tr>
+			<tr>
+				<td><button type="button" onclick="takeItem(7);" class="btn btn-primary">7</button></td>
+				<td><button type="button" onclick="takeItem(8);" class="btn btn-primary">8</button></td>
+				<td><button type="button" onclick="takeItem(9);" class="btn btn-primary">9</button></td>
+				<td><button type="button" onclick="takeItem('/');" class="btn btn-primary">/</button></td>
+				<td><button type="button" onclick="reset();" class="btn btn-primary">C</button></td>
+			</tr>
+			
+			<tr>
+				<td><button type="button" onclick="takeItem(4);" class="btn btn-primary">4</button></td>
+				<td><button type="button" onclick="takeItem(5);" class="btn btn-primary">5</button></td>
+				<td><button type="button" onclick="takeItem(6);" class="btn btn-primary">6</button></td>
+				<td><button type="button" onclick="takeItem('*');" class="btn btn-primary">*</button></td>
+				<td><button type="button" onclick="backSpace();" class="btn btn-primary">--</button></td>
+			</tr>
+			
+			<tr>
+				<td><button type="button" onclick="takeItem(1);" class="btn btn-primary">1</button></td>
+				<td><button type="button" onclick="takeItem(2);" class="btn btn-primary">2</button></td>
+				<td><button type="button" onclick="takeItem(3);" class="btn btn-primary">3</button></td>
+				<td><button type="button" onclick="takeItem('-');" class="btn btn-primary">-</button></td>
+				<td><button type="button" onclick="takeItem('=');" class="btn btn-primary">=</button></td>
+			</tr>
+			
+			<tr>
+				<td><button type="button" onclick="takeItem(0);" class="btn btn-primary">0</button></td>
+				<td><button type="button" onclick="takeItem('.');" class="btn btn-primary">.</button></td>
+				<td><button type="button" onclick="calc();" class="btn btn-primary">+</button></td>
+			</tr>
+		</table>
+
+	</div>
+
+
+	<!--
 	<form id="form_data" action="index.php" method="post">
 		<h3>Calculator</h3>
 		<fieldset>
@@ -25,5 +83,8 @@
 				 <br> <br> Result: <input type="text" id="result" />
 		</fieldset>
 	</form>
+	-->
+
+
 </body>
 </html>

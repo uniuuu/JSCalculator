@@ -1,6 +1,28 @@
 
 
+function reset(){
+	e = document.getElementById("inputResult");
+	e.value=""
+	
+}
 
+function backSpace() {
+	e = document.getElementById("inputResult");
+	valOld = e.value;
+	valNew = valOld.slice(0,(valOld.length-1));
+	e.value = valNew;
+}
+
+function takeItem(item){
+	e = document.getElementById("inputResult");
+	valOld = e.value;
+	valNew = valOld+item;
+	e.value = valNew;
+}
+
+
+
+/*
 function calc(){
 
 	var num1, num2;
@@ -53,3 +75,5 @@ function calc(){
 	doCalc();
 
 }
+
+*/
