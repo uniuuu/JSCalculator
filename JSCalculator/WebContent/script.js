@@ -21,6 +21,24 @@ function takeItem(item){
 }
 
 
+function calc(){
+	e = document.getElementById("inputResult");
+	value = e.value;
+	
+	$.ajax({
+	url:'server.php',
+	method:'post',
+	data:{'calc':value}
+		
+		
+	}).done(function(result){
+		alert("Resultat: "+result);
+		
+		
+		
+	});
+}
+
 
 /*
 function calc(){
