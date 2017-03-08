@@ -20,6 +20,35 @@ margin-top:40px;
 #table{
 text-align:center;
 }
+
+.btn-xlarge {
+       padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 22px;
+}
+
+.btn-xlng {
+    padding-right: 23px;
+    padding-left: 23px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.btn-math {
+
+    padding-right: 8px;
+    padding-left: 7px;
+}
+
+.btn-bs {
+
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
 </style>
 
 
@@ -37,7 +66,7 @@ text-align:center;
 				<td><button type="button" onclick="takeItem(7);" class="btn btn-primary">7</button></td>
 				<td><button type="button" onclick="takeItem(8);" class="btn btn-primary">8</button></td>
 				<td><button type="button" onclick="takeItem(9);" class="btn btn-primary">9</button></td>
-				<td><button type="button" onclick="takeItem('/');" class="btn btn-primary">/</button></td>
+				<td><button type="button" onclick="takeItem('/');" class="btn btn-primary btn-math">/</button></td>
 				<td><button type="button" onclick="reset();" class="btn btn-primary">C</button></td>
 			</tr>
 			
@@ -45,21 +74,21 @@ text-align:center;
 				<td><button type="button" onclick="takeItem(4);" class="btn btn-primary">4</button></td>
 				<td><button type="button" onclick="takeItem(5);" class="btn btn-primary">5</button></td>
 				<td><button type="button" onclick="takeItem(6);" class="btn btn-primary">6</button></td>
-				<td><button type="button" onclick="takeItem('*');" class="btn btn-primary">*</button></td>
-				<td><button type="button" onclick="backSpace();" class="btn btn-primary">--</button></td>
+				<td><button type="button" onclick="takeItem('*');" class="btn btn-primary btn-math ">*</button></td>
+				<td><button type="button" onclick="backSpace();" class="btn btn-primary btn-bs"><-</button></td>
 			</tr>
 			
 			<tr>
 				<td><button type="button" onclick="takeItem(1);" class="btn btn-primary">1</button></td>
 				<td><button type="button" onclick="takeItem(2);" class="btn btn-primary">2</button></td>
 				<td><button type="button" onclick="takeItem(3);" class="btn btn-primary">3</button></td>
-				<td><button type="button" onclick="takeItem('-');" class="btn btn-primary">-</button></td>
-				<td><button type="button" onclick="calc();" class="btn btn-primary">=</button></td>
+				<td><button type="button" onclick="takeItem('-');" class="btn btn-primary btn-math">-</button></td>
+				<td rowspan="2"><button type="button" onclick="calc();" class="btn btn-primary btn-xlarge">=</button></td>
 			</tr>
 			
 			<tr>
-				<td><button type="button" onclick="takeItem(0);" class="btn btn-primary">0</button></td>
-				<td><button type="button" onclick="takeItem('.');" class="btn btn-primary">.</button></td>
+				<td colspan="2"><button type="button" onclick="takeItem(0);" class="btn btn-primary btn-xlng">0</button></td>
+				<td><button type="button" onclick="takeItem('.');" class="btn btn-primary btn-math">.</button></td>
 				<td><button type="button" onclick="takeItem('+');" class="btn btn-primary">+</button></td>
 			</tr>
 		</table>

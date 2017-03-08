@@ -32,7 +32,8 @@ function calc(){
 		
 		
 	}).done(function(result){
-		alert("Resultat: "+result);		
+		//alert("Resultat: "+result);	
+		e.value = result;
 	});
 }
 
