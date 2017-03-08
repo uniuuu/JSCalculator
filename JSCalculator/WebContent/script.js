@@ -19,8 +19,6 @@ function takeItem(item){
 	valNew = valOld+item;
 	e.value = valNew;
 }
-
-
 function calc(){
 	e = document.getElementById("inputResult");
 	value = e.value;

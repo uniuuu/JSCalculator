@@ -10,7 +10,6 @@ if($_POST){
 			echo false;
 		}else {
 			echo $result;
-		}
-		
+		}	
 	}
 }
