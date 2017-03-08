@@ -6,8 +6,8 @@
 	content="text/html; charset=windows-1250">
 <link type="css/layout.css" rel="stylesheet" />
 
-<script type="text/javascript" src="js/jquery.js"></script>
-<script src="js/jquery-1.12.1.min.js"></script>
+<!--  <script type="text/javascript" src="js/jquery.js"></script>-->
+<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
 <script src="bootstrap.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 <style>
@@ -54,13 +54,13 @@ text-align:center;
 				<td><button type="button" onclick="takeItem(2);" class="btn btn-primary">2</button></td>
 				<td><button type="button" onclick="takeItem(3);" class="btn btn-primary">3</button></td>
 				<td><button type="button" onclick="takeItem('-');" class="btn btn-primary">-</button></td>
-				<td><button type="button" onclick="takeItem('=');" class="btn btn-primary">=</button></td>
+				<td><button type="button" onclick="calc();" class="btn btn-primary">=</button></td>
 			</tr>
 			
 			<tr>
 				<td><button type="button" onclick="takeItem(0);" class="btn btn-primary">0</button></td>
 				<td><button type="button" onclick="takeItem('.');" class="btn btn-primary">.</button></td>
-				<td><button type="button" onclick="calc();" class="btn btn-primary">+</button></td>
+				<td><button type="button" onclick="takeItem('+');" class="btn btn-primary">+</button></td>
 			</tr>
 		</table>
 
