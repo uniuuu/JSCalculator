@@ -1,2 +1,2 @@
 # JSCalculator
-https://jscalculator.000webhostapp.com/
+https://jscalculator.000webhostapp.com/JSCalculator/
